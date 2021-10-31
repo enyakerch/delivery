@@ -1,0 +1,194 @@
+.layout_layoutContainer {
+  max-width:var(--rd-content-width);
+  margin:var(--rd-container-margin);
+  -webkit-flex:1 1;
+  -moz-box-flex:1;
+  flex:1 1;
+  margin-top:10px;
+  padding:var(--rd-gutter);
+  width:100%;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box
+}
+
+.products_categoryAnchor {
+  display:block;
+  position:absolute;
+  top:-webkit-calc(-1 * (var(--header-height,160px) + var(--filters-height,100px) + 10px));
+  top:calc(-1 * (var(--header-height, 160px) + var(--filters-height, 100px) + 10px));
+  visibility:hidden
+}
+.products_categoryAnchor.products_first {
+  top:-webkit-calc(-1 * (160px + 30px + 40px + var(--filters-height,100px) + 10px));
+  top:calc(-1 * (160px + 30px + 40px + var(--filters-height, 100px) + 10px))
+}
+.products_productsBlock {
+  margin-top:40px;
+  display:-webkit-flex;
+  display:-moz-box;
+  display:flex;
+  -webkit-flex-direction:column;
+  -moz-box-orient:vertical;
+  -moz-box-direction:normal;
+  flex-direction:column;
+  position:relative
+}
+.products_productsBlock:first-child {
+  margin-top:40px
+}
+.products_productsBlockTitle {
+  margin:0 0 30px;
+  font-family:var(--rd-font-family-regular);
+  font-size:24px;
+  font-weight:400
+}
+.products_productsBlockContent {
+  display:-webkit-flex;
+  display:-moz-box;
+  display:flex;
+  -webkit-flex-direction:row;
+  -moz-box-orient:horizontal;
+  -moz-box-direction:normal;
+  flex-direction:row;
+  -webkit-flex-wrap:wrap;
+  flex-wrap:wrap;
+  -webkit-justify-content:space-between;
+  -moz-box-pack:justify;
+  justify-content:space-between
+}
+
+.position_addedPosition, .position_position {
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.position_position {
+  width: 49%;
+  min-width: 290px;
+  min-height: 228px;
+  margin-bottom: 2%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+}
+
+.position_descriptionSection {
+  padding: 30px;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.position_nameAndDescriptionWrapper {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column;
+}
+
+.position_name {
+  font-family: var(--rd-font-family-regular);
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: .7px;
+}
+
+.position_description {
+  font-family: var(--rd-font-family-light);
+  margin: 15px 0 0;
+  font-size: 14px;
+  letter-spacing: .4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: normal;
+}
+
+.position_addWrapper, .position_priceBlock {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-direction: row;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+}
+
+.position_price {
+  font-family: var(--rd-font-family-medium);
+  margin: 0;
+  font-size: 18px;
+}
+
+.position_priceBlock {
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  padding-top: 20px;
+  height: 30px;
+}
+
+.quantity-button_quantityButtonPosition {
+  width: 30px;
+  height: 30px;
+}
+
+.quantity-button_quantityButton {
+  background-color: #fff;
+  color: var(--rd-color-secondary);
+  border: 1px solid var(--rd-color-secondary);
+  border-radius: 8px;
+  font-family: var(--rd-font-family-light);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  outline: none;
+}
+
+.position_photoContainer {
+  min-width: 40%;
+  max-width: 40%;
+  overflow: hidden;
+  background-color: #fafafa;
+  border-left: 1px solid rgba(0,0,0,.1);
+  position: relative;
+}
+
+.position_photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}

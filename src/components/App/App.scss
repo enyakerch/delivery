@@ -1,0 +1,18 @@
+@import '../../assets/webfonts.scss';
+
+@import '../../assets/helpers';
+
+.layout_layoutWrapper {
+  min-height:100vh;
+  display:-webkit-flex;
+  display:-moz-box;
+  display:flex;
+  -webkit-flex-direction:column;
+  -moz-box-orient:vertical;
+  -moz-box-direction:normal;
+  flex-direction:column
+}
+
+.banners_bottomBanner, .banners_topBanner {
+  margin-top: 20px;
+}
